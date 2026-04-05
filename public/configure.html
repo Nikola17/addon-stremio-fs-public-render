@@ -172,6 +172,8 @@
                 apiInput.value = apiParam.replace(/\/$/, '');
             } else if (!window.location.hostname.includes('github.io')) {
                 apiInput.value = window.location.origin;
+            } else {
+                apiInput.value = 'https://addon-stremio-fs-public-render.onrender.com';
             }
         })();
 
